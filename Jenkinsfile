@@ -29,7 +29,7 @@ pipeline {
                 script{
                     //https://<AwsAccountNumber>.dkr.ecr.<region>.amazonaws.com/netflix-app', 'ecr:<region>:<credentialsId>
                     //docker.withRegistry('https://335871625378.dkr.ecr.eu-west-2.amazonaws.com/netflix-app', 'ecr:eu-west-2:karo-ecr') {
-                    docker.withRegistry('https://384874606381.dkr.ecr.us-east-1.amazonaws.com/nfx-react-clone', 'ecr:us-east-1:nfx-react-clone') {
+                    docker.withRegistry('https://384874606381.dkr.ecr.us-east-1.amazonaws.com/nfx-react-clone', 'ecr:us-east-1:ira-ecr') {
                     
                     // build image
                     def myImage = docker.build("335871625378.dkr.ecr.eu-west-2.amazonaws.com/netflix-app:v1.0.0.RELEASE")
